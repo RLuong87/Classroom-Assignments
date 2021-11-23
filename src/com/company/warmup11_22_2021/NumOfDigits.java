@@ -23,17 +23,19 @@ public class NumOfDigits {
 
     public static int numOfDigits(int num) {
 
-        int count = 0;
+//        int count = 0;
 
-        if (num == 0) {
-            return 1;
-        } else {
-            while (num != 0) {
-                num = num / 10;
-                count++;
-            }
-        }
-        return count;
+        String count = Integer.toString(Math.abs(num));
+
+//        if (num == 0) {
+//            return 1;
+//        } else {
+//            while (num != 0) {
+//                num = num / 10;
+//                count++;
+//            }
+//        }
+        return count.length();
 
 //        if (n / 10 == 0) { // Recursive Solution
 //            return 1;
@@ -43,8 +45,8 @@ public class NumOfDigits {
 
     public static void main(String[] args) {
 
-        System.out.println(numOfDigits(1000));
-        System.out.println(numOfDigits(12));
+        System.out.println(numOfDigits(-1000));
+        System.out.println(numOfDigits(-12));
         System.out.println(numOfDigits(1305981031));
         System.out.println(numOfDigits(0));
 
