@@ -1,2 +1,2 @@
 # Classroom-Assignments
-Java Warmup Challenge for CareerDevs
+Java Warmup Challenges for CareerDevs
